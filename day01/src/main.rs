@@ -6,16 +6,16 @@ fn main() {
 }
 
 fn first_star() -> u32 {
-    CAPTCHA.chars()
-        .zip(CAPTCHA.chars().cycle().skip(1))
-        .filter(|&(one, consec)| one.is_digit(10) && one == consec)
-        .map(|(one, _)| one.to_digit(10).expect("Impossibru"))
-        .sum()
+    captcha(1)
 }
 
 fn second_star() -> u32 {
+    captcha(CAPTCHA.len() / 2)
+}
+
+fn captcha(skipper: usize) -> u32 {
     CAPTCHA.chars()
-        .zip(CAPTCHA.chars().cycle().skip(CAPTCHA.len() / 2))
+        .zip(CAPTCHA.chars().cycle().skip(skipper))
         .filter(|&(one, consec)| one.is_digit(10) && one == consec)
         .map(|(one, _)| one.to_digit(10).expect("Impossibru"))
         .sum()
