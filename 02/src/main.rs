@@ -1,8 +1,8 @@
 const SPREADSHEET: &'static str = include_str!("spreadsheet.txt");
 
 fn main() {
-    println!("Day 2; corruption checksum; First Star: {:?}", first_star());
-    println!("Day 2; corruption checksum; Second Star: {:?}", second_star());
+    println!("Day  2; corruption checksum; First Star: {:?}", first_star());
+    println!("Day  2; corruption checksum; Second Star: {:?}", second_star());
 }
 
 fn first_star() -> u32 {

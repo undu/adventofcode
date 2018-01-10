@@ -1,8 +1,8 @@
 const INPUT: u32 = 361527;
 
 fn main() {
-    println!("Day 3; spiral memory; First Star: {:?}", first_star());
-    println!("Day 3; spiral memory; Second Star: {:?}", second_star());
+    println!("Day  3; spiral memory; First Star: {:?}", first_star());
+    println!("Day  3; spiral memory; Second Star: {:?}", second_star());
 }
 
 fn first_star() -> u32 {

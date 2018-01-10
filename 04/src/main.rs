@@ -3,8 +3,8 @@ use std::collections::HashSet;
 const PASSPHRASES: &'static str = include_str!("passphrases.txt");
 
 fn main() {
-    println!("Day 4; high-entropy passphrases; First Star: {:?}", first_star());
-    println!("Day 4; high-entropy passphrases; Second Star: {:?}", second_star());
+    println!("Day  4; high-entropy passphrases; First Star: {:?}", first_star());
+    println!("Day  4; high-entropy passphrases; Second Star: {:?}", second_star());
 }
 
 fn filtered() -> Vec<Vec<&'static str>> {

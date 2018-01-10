@@ -1,8 +1,8 @@
 const CAPTCHA: &'static str = include_str!("inverse_captcha.txt");
 
 fn main() {
-    println!("Day 1; inverse captcha; First Star: {:?}", first_star());
-    println!("Day 1; inverse captcha; Second Star: {:?}", second_star());
+    println!("Day  1; inverse captcha; First Star: {:?}", first_star());
+    println!("Day  1; inverse captcha; Second Star: {:?}", second_star());
 }
 
 fn first_star() -> u32 {
