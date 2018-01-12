@@ -8,6 +8,7 @@ fn main() {
 fn first_star() -> u32 {
     0
 }
+
 fn second_star() -> u32 {
     0
 }
