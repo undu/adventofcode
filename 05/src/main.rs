@@ -22,7 +22,7 @@ fn trampolines(threshold: i32) -> u32 {
         } else {
             jumps[next] += 1;
         }
-        next += jump;
+        next = next.wrapping_add(jump);
         jumped += 1;
     }
     jumped
